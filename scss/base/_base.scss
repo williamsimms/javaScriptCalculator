@@ -1,0 +1,35 @@
+@import '../abstracts/variables';
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Metal Mania', sans-serif;
+    background-image: linear-gradient(132deg, $color-linear-gradient-yellow, $color-linear-gradient-green);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: $container-size;
+    margin: 0 auto;
+}
+::selection {
+    background-color: $color-linear-gradient-green;
+}

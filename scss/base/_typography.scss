@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather&family=Metal+Mania&display=swap');
+@import '../abstracts/variables';
+
+.hero-text {
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .3rem;
+    font-weight: 100;
+    color: $color-white;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba($color-black,0.7);
+    position: relative;
+
+    &::after {
+        position:absolute;
+        width: 15rem;
+        height: .2rem;
+        content: ' ';
+        left: 50%;
+        right: 0;
+        background-color: $color-white;
+        top:109%;
+        transform: translate(-50%);
+
+     }
+}

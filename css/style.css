@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather&family=Metal+Mania&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Metal Mania', sans-serif;
+  background-image: linear-gradient(132deg, #F4D03F, #16A085);
+  background-repeat: no-repeat;
+  height: 100vh; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 30rem;
+  margin: 0 auto; }
+
+::selection {
+  background-color: #16A085; }
+
+.hero-text {
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 100;
+  color: #fff;
+  padding-top: 5rem;
+  margin-bottom: 10rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  position: relative; }
+  .hero-text::after {
+    position: absolute;
+    width: 15rem;
+    height: .2rem;
+    content: ' ';
+    left: 50%;
+    right: 0;
+    background-color: #fff;
+    top: 109%;
+    transform: translate(-50%); }
+
+.calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 2rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  font-family: 'Barlow'; }
+
+.display {
+  grid-row: 1/2;
+  grid-column: 1/5;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 3rem .5rem 1.2rem 0;
+  align-items: flex-end;
+  justify-content: space-between; }
+  .display-previous {
+    font-size: 1.8rem; }
+  .display-current {
+    font-size: 2.3rem; }
+
+.btn {
+  outline: none;
+  border: #fff 1px solid;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.75);
+  font-size: 2rem;
+  transition: all .2s ease-in-out;
+  font-family: inherit;
+  padding: 2rem; }
+  .btn-equals, .btn-all-clear {
+    grid-column: span 2; }
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.85); }
+  .btn:active {
+    background-color: white; }
