@@ -59,7 +59,8 @@ a {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   font-size: 2rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
-  font-family: 'Barlow'; }
+  font-family: 'Barlow';
+  font-weight: 800; }
 
 .display {
   grid-row: 1/2;
@@ -69,13 +70,13 @@ a {
   flex-direction: column;
   word-wrap: break-word;
   word-break: break-all;
-  padding: 3rem .5rem 1.2rem 0;
+  padding: 1rem .5rem 1.2rem 0;
   align-items: flex-end;
   justify-content: space-between; }
   .display-previous {
-    font-size: 1.8rem; }
+    font-size: 1.6rem; }
   .display-current {
-    font-size: 2.3rem; }
+    font-size: 2rem; }
 
 .btn {
   outline: none;
